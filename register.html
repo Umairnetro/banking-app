@@ -3,35 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Register</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="login-container">
       <div class="side-image">
-        <img src="assets/bg2.png" alt="" />
+        <img src="assets/bg.png" alt="" />
       </div>
       <div class="login-section">
         <div class="heading">
-          <h2>Sign in</h2>
+          <h2>Sign up</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
             dolor sit amet consectetur adipisicing elit. Iure, dolor?
             consequntur corporis aut.
           </p>
         </div>
-        <form id="login-form" class="form" action="">
+        <form id="register-form" class="form" action="">
+          <div class="my-input">
+            <label for="username">Name</label>
+            <input id="username" type="text" name="name" autocomplete="off" required/>
+          </div>
+
           <div class="my-input">
             <label for="email">Email</label>
             <input id="email" type="text" name="name" autocomplete="off" required/>
           </div>
           <div class="my-input">
             <label for="password">Password</label>
-            <input id="password" type="text" name="name" autocomplete="off" required/>
+            <input id="password" type="text" name="name" autocomplete="off" / required>
           </div>
-          <button class="sign-up">Login</button>
+          <button class="sign-up">Sign up</button>
           <p class="login-link">
-            Don't have an account, <a href="register.html">Register Now</a>
+            Already have an <a href="login.html">Account</a>
           </p>
         </form>
       </div>
