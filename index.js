@@ -67,7 +67,8 @@ console.log(loggedInUser);
 const userDisplayName = document.querySelector(".profile-name");
 
 if (userDisplayName && loggedInUser) {
-  userDisplayName.textContent = loggedInUser.username;
+    userDisplayName.textContent = loggedInUser.username;
+    document.querySelector(".profile").classList.remove("d-none");
   document.querySelector(".btn-group").classList.add("d-none");
   document.querySelector(".card-group").classList.remove("d-none");
   document.querySelector(".dismiss").classList.add("d-none");
