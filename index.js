@@ -15,8 +15,6 @@ window.addEventListener("DOMContentLoaded", function () {
       const userExists = users.some((user) => user.email === email);
       console.log(userExists);
 
-      debugger;
-
       if (userExists) {
         alert(
           "This email is already registered. Please use a different email or log in."
@@ -43,6 +41,10 @@ if (loginForm) {
     const email = document.querySelector("#email").value;
     const password = document.querySelector("#password").value;
 
+    if(localStorage.getItem("users") == null){
+      alert("Please register first");
+    }
+    
     const users = JSON.parse(localStorage.getItem("users"));
 
     const user = users.find(
@@ -67,8 +69,8 @@ console.log(loggedInUser);
 const userDisplayName = document.querySelector(".profile-name");
 
 if (userDisplayName && loggedInUser) {
-    userDisplayName.textContent = loggedInUser.username;
-    document.querySelector(".profile").classList.remove("d-none");
+  userDisplayName.textContent = loggedInUser.username;
+  document.querySelector(".profile").classList.remove("d-none");
   document.querySelector(".btn-group").classList.add("d-none");
   document.querySelector(".card-group").classList.remove("d-none");
   document.querySelector(".dismiss").classList.add("d-none");

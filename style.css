@@ -125,7 +125,7 @@ main {
 }
 
 .dismiss h2{
-  font-size:1.3rem;
+  font-size:1.2rem;
   font-weight:400;
 }
 
@@ -172,7 +172,7 @@ main .card-group .card svg {
 main .card-group .card h3 {
   font-size: 1.3rem;
   color: var(--text-white);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Login page CSS*/
