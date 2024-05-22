@@ -43,6 +43,7 @@ if (loginForm) {
 
     if(localStorage.getItem("users") == null){
       alert("Please register first");
+      window.location.href = "register.html";
     }
     
     const users = JSON.parse(localStorage.getItem("users"));
